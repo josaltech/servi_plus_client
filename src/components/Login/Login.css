@@ -1,0 +1,30 @@
+.card {
+  border-top: 3px solid #00d1b2 !important;
+}
+
+.login-box {
+  margin: 8rem auto;
+}
+
+.error-msg {
+  width: 70%;
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid red;
+  color: red;
+  border-radius: 4px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.btn {
+  font-weight: 700;
+  background-color: #00d1b2;
+  border-color: #00d1b2;
+}
+
+.btn:hover {
+  background-color: #00c4a7;
+  border-color: transparent;
+}

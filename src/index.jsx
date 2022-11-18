@@ -1,10 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import { AuthContextProvider } from './context/AuthContext';
+import { TicketsContextProvider } from './context/TicketsContext';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <TicketsContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </TicketsContextProvider>
+    </AuthContextProvider>
   </React.StrictMode>
 );
