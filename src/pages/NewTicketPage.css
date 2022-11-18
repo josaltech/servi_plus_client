@@ -1,0 +1,16 @@
+.card {
+  max-width: 70% !important;
+  margin: 2rem auto;
+}
+
+.error-msg {
+  width: 70%;
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid red;
+  color: red;
+  border-radius: 4px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
